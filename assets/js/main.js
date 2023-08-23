@@ -17,19 +17,21 @@ const lunghezza = Number(prompt('quanti km devi percorrere?'));
 console.log('km da percorrere: '+ lunghezza)  ;
 //chiedere eta
 const eta = Number(prompt('quanti anni hai?')) ;
-console.log('età: '+ eta)  ;
+console.log('età: '+ eta + ' anni')  ;
 //calcolare costo tratta
-let costoTratta = lunghezza * 0.21;
+const costoTratta = lunghezza * 0.21;
 console.log('prezzo intero: ' + costoTratta);
 //calcolare eventuale sconto
 
 if(eta < 18){
     const costoFinale = (costoTratta / 100) * 80;
-   console.log('prezzo con sconto: ' + costoFinale); //arrotondare
+    const costoArrotondato = costoFinale.toFixed(2);
+   console.log('prezzo con sconto: ' + costoArrotondato); 
 
 } else if(eta > 65){
     const costoFinale = (costoTratta / 100) * 60;
-   console.log('prezzo con sconto: ' + costoFinale); //arrotondare
+    const costoArrotondato = costoFinale.toFixed(2);
+   console.log('prezzo con sconto: ' + costoArrotondato); 
 } 
 
 //log prezzo biglietto
