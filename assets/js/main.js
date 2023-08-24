@@ -8,7 +8,12 @@ L'output del prezzo finale va stampato in forma umana (ovvero con massimo due de
  */
 
 /* 
-strumenti>
+strumenti:
+-if/else
+-const
+-console.log
+-prompt
+-Number
 
  */
 
